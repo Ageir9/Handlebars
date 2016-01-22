@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Handlebars</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+        <script type="text/javascript" src="js/bars.js"></script>
+    </head>
+    <body>
+        <!--This is the container where the templates will be instantiated -->
+        <div id="container">
+            <script id="itemTemplate" type="text/x-handlebars-template"> {{#each employees}}
+                <div class="Templatecss"><p>My name is {{name}}. My title is {{title}}, email: {{email}}.</p></div>{{/each}}
+                <br><p>Pepes that full-time</p>{{#each employees}} {{#if fulltime}}
+                <div class="Templatecss"><h4>{{name}}</div>{{/if}} {{/each}}</h4>
+            </script>
+        </div><p>Focus er á handlebars þannig að þetta er ljótt.</p>
+    </body>
+</html>
